@@ -8,8 +8,7 @@ export function Signup() {
   const dispatch = useDispatch();
 
   return (
-     <>
-     
+    <>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -25,7 +24,10 @@ export function Signup() {
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           <form className="space-y-6" action="#" method="POST">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium leading-6 text-gray-900"
+              >
                 Email address
               </label>
               <div className="mt-2">
@@ -42,11 +44,17 @@ export function Signup() {
 
             <div>
               <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Password
                 </label>
                 <div className="text-sm">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  <a
+                    href="#"
+                    className="font-semibold text-indigo-600 hover:text-indigo-500"
+                  >
                     Forgot password?
                   </a>
                 </div>
@@ -66,10 +74,12 @@ export function Signup() {
             {/* confirm password */}
             <div>
               <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                <label
+                  htmlFor="password"
+                  className="block text-sm font-medium leading-6 text-gray-900"
+                >
                   Confirm Password
                 </label>
-                
               </div>
               <div className="mt-2">
                 <input
@@ -93,8 +103,11 @@ export function Signup() {
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Already a member?{' '}
-            <Link to="/login" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+            Already a member?{" "}
+            <Link
+              to="/login"
+              className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
+            >
               Sign-in
             </Link>
           </p>
