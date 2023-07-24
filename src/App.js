@@ -1,13 +1,36 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
 import './App.css';
-import { ProductList } from './features/product-list/ProductList';
+import LoginPage from './pages/LoginPage';
+import Home from './pages/Home';
+import SignupPage from './pages/SignupPage' 
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home /> ,
+  },
+  {
+    path: "/login",
+    element: <LoginPage />,
+  },
+  {
+    path: "/signup",
+    element: <SignupPage />,
+  },
+]);
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ProductList />
+      <RouterProvider router={router} />
       </header>
     </div>
   );
